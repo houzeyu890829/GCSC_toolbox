@@ -1,0 +1,11 @@
+function X=ES_model(Q)
+a=kriging_W1(Q);
+b=kriging_W2(Q);
+c=kriging_W3(Q);
+d=kriging_W4(Q);
+e=kriging_W5(Q);
+g=kriging_W6(Q);
+h=kriging_W7(Q);
+k=kriging_W8(Q);
+F=[a,b,c,d,e,g,h,k];
+X=0.804757486*F+0.195242514*KELMdnapl(Q);
